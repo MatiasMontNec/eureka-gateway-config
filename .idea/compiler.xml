@@ -2,13 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
-        <module name="gateway-service" />
+        <module name="microserviceCredit" />
         <module name="config-service" />
+        <module name="microserviceSavingAccount" />
+        <module name="gateway-service" />
+        <module name="microserviceAccountDraft" />
+        <module name="microserviceCustomer" />
+        <module name="microserviceWorkHistory" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +23,11 @@
       <module name="config-service" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
+      <module name="microserviceAccountDraft" options="-parameters" />
+      <module name="microserviceCredit" options="-parameters" />
+      <module name="microserviceCustomer" options="-parameters" />
+      <module name="microserviceSavingAccount" options="-parameters" />
+      <module name="microserviceWorkHistory" options="-parameters" />
     </option>
   </component>
 </project>

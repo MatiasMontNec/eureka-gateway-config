@@ -7,6 +7,11 @@
         <option value="$PROJECT_DIR$/config-service/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-service/eureka-service/pom.xml" />
         <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../microserviceAccountDraft/pom.xml" />
+        <option value="$PROJECT_DIR$/../microserviceCredit/pom.xml" />
+        <option value="$PROJECT_DIR$/../microserviceCustomer/pom.xml" />
+        <option value="$PROJECT_DIR$/../microserviceSavingAccount/pom.xml" />
+        <option value="$PROJECT_DIR$/../microserviceWorkHistory/pom.xml" />
       </list>
     </option>
   </component>
