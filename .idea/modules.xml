@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../deployment/deployment.iml" filepath="$PROJECT_DIR$/../deployment/deployment.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/eureka-gateway-config.iml" filepath="$PROJECT_DIR$/.idea/eureka-gateway-config.iml" />
     </modules>
   </component>
