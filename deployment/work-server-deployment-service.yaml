@@ -47,3 +47,19 @@ spec:
                 secretKeyRef:
                   name: postgres-credentials
                   key: DB_PASSWORD_WORK_APPLICATION
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: work-service
+  labels:
+    app: work-service
+spec:
+  selector:
+    app: work-deployment
+  ports:
+    - protocol: TCP
+      port: 8095
+      targetPort: 0
+  type: NodePort

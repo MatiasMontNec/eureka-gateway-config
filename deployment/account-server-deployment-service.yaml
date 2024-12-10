@@ -47,3 +47,19 @@ spec:
                 secretKeyRef:
                   name: postgres-credentials
                   key: DB_PASSWORD_ACCOUNT_APPLICATION
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: account-service
+  labels:
+    app: account-service
+spec:
+  selector:
+    app: account-deployment
+  ports:
+    - protocol: TCP
+      port: 8091
+      targetPort: 0
+  type: NodePort

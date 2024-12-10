@@ -87,4 +87,4 @@ spec:
   selector:
     app: credit-db-deployment
     tier: database
-  type: LoadBalancer
+  type: NodePort

@@ -19,17 +19,6 @@ spec:
           image: mahirolyuvob/config-manageloans
           ports:
             - containerPort: 8081
-          env:
-            - name: GIT_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: git-credentials
-                  key: username
-            - name: GIT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: git-credentials
-                  key: password
 ---
 
 apiVersion: v1
@@ -45,4 +34,4 @@ spec:
     - protocol: TCP
       port: 8081
       targetPort: 8081
-  type: LoadBalancer
+  type: NodePort

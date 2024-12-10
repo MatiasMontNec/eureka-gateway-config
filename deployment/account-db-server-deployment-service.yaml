@@ -87,4 +87,4 @@ spec:
   selector:
     app: account-db-deployment
     tier: database
-  type: LoadBalancer
+  type: NodePort
