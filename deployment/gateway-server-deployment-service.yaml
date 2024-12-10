@@ -19,6 +19,18 @@ spec:
           image: mahirolyuvob/gateway-manageloans
           ports:
             - containerPort: 8080
+          env:
+            - name: SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE
+              value: "10MB"
+            - name: SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE
+              value: "10MB"
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
